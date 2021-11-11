@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from preview.colorlib.com/theme/gricklo/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Oct 2021 21:39:19 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Directory | Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/xfavicon.png.pagespeed.ic.-thBECboBf.png">
+
+    <link rel="stylesheet" href="assets/css/a.css">
+    <link rel="stylesheet" href="assets/css/b.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <header id="headerContent">
+		<script>setHeader()</script>
+	</header>
+    <main>
+        <div class="slider-area">
+            <div class="slider-height2 hero-bg2 hero-overly d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-caption hero-caption2">
+                                <h2>Modifier Compte Prestataire</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register-form-area">
+            <div class="register-form text-center">
+
+
+                <div class="input-box">
+                    <div class="single-input-fields">
+                        <label>Nom complet</label>
+                        <input disabled type="text" placeholder="Nom" id="name">
+                        <span id="nameError"></span>
+                    </div>
+                    <div class="single-input-fields">
+                        <label>Societé</label>
+                        <input disabled type="text" placeholder="Société" id="company">
+                        <span id="campanyError"></span>
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group col-md-6">
+                            <select class="single-input-fields" id="prestationsList">
+                                <option>Choisir votre prestation</option>
+                                <script>displayPrestation()</script>
+                            </select>
+                            <span id="prestationError"></span>
+                        </div>
+    
+                        <div class="form-group col-md-6">
+                            <select class="single-input-fields" id="gouvList" >
+                                <option>Choisir votre Gouvernorat</option>
+                                <script>displayGouv()</script>
+                            </select>
+                            <span id="addressError"></span>
+                        </div>
+                    </div>
+                    <div class="single-input-fields">
+                        <label>Email Address</label>
+                        <input disabled type="email" placeholder="Entrer email" id="email">
+                        <span id="emailError"></span>
+                        <span id="userExistError"></span>
+                    </div>
+                    <div class="single-input-fields">
+                        <label>Téléphone</label>
+                        <input type="tel" placeholder="Entrer votre numéro de téléphone" id="tel">
+                        <span id="telError"></span>
+                    </div>
+                    <div class="single-input-fields">
+                        <label>Mot de passe</label>
+                        <input type="password" placeholder="Saisir mot de passe" id="password">
+                        <span id="passwordError"></span>
+                    </div>
+                    <div class="single-input-fields">
+                        <label>Confirmer mot de passe</label>
+                        <input type="password" placeholder="Confirmer votre mot de passe" id="confirmPassword">
+                        <span id="confirmPasswordError"></span>
+                    </div>
+                </div>
+
+                <div class="register-footer">
+                    <button class="submit-btn3" onclick="editPrestataire()">Modifier</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-wrapper gray-bg">
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-20">
+
+                                    <div class="footer-logo mb-35">
+                                        <a href="index.html"><img
+                                                src="assets/img/logo/xlogo2_footer.png.pagespeed.ic.7q74cPMyQA.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p>Label Events regroupe une communauté de prestataires professionnels sélectionnés et met à leur disposition un ensemble de services leur permettant de développer leur activité.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer-social">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offset-xl-1 col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Navigation</h4>
+                                    <ul>
+                                        <li><a href="index.html">Accueil</a></li>
+                                        <li><a href="nos-prestataires.html">Nos prestataires</a></li>
+                                        <li><a href="about.html">A propos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle mb-10">
+                                    <h4>Abonnez-vous à la newsletter</h4>
+                                    <p>Abonnez-vous à notre newsletter pour recevoir des mises à jour sur nos services et nos offres.</p>
+                                </div>
+
+                                <div class="footer-form mb-20">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank"
+                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                            class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email"
+                                                placeholder="Entrer votre adresse email" class="placeholder hide-on-focus">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                    class="email_icon newsletter-submit button-contactForm">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js%2bbootstrap.min.js.pagespeed.jc.rDz9KUXW0v.js"></script>
+    <script>eval(mod_pagespeed_h6FSS0R5Nk);</script>
+    <script>eval(mod_pagespeed_nAF17_H0Ki);</script>
+
+    <script src="assets/js/owl.carousel.min.js%2bslick.min.js.pagespeed.jc.Dccc_xx8PD.js"></script>
+    <script>eval(mod_pagespeed_4EWkIIjjEL);</script>
+    <script>eval(mod_pagespeed_b61UQMOxQz);</script>
+    <script src="assets/js/jq.js"></script>
+    <script>eval(mod_pagespeed_u74TJ7b4ya);</script>
+
+    <script>eval(mod_pagespeed_jkoDhHOz0u);</script>
+    <script>eval(mod_pagespeed_LXmZQChS9I);</script>
+    <script>eval(mod_pagespeed_weSlV7qHIh);</script>
+    <script>eval(mod_pagespeed_5FaTDDR9BI);</script>
+    <script>eval(mod_pagespeed_$E6h4J_eHl);</script>
+
+    <script>eval(mod_pagespeed_3Bn1QXBxeT);</script>
+    <script src="assets/js/jqq.js"></script>
+    <script>eval(mod_pagespeed_wwngUhmEap);</script>
+    <script>eval(mod_pagespeed_wwngUhmEap);</script>
+    <script>eval(mod_pagespeed_p1DPFKbsIO);</script>
+    <script>eval(mod_pagespeed_qHuP$p3A$U);</script>
+    <script>eval(mod_pagespeed_cha65DBll0);</script>
+
+    <script>eval(mod_pagespeed__9GFzCTG35);</script>
+    <script>eval(mod_pagespeed_3_hkYAdE2S);</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"rayId":"6a0d288e215f5386","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
+    <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"rayId":"6a0d288e0dc35386","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
+    <script>displayComptePrestataire()</script>
+    </body>
+
+<!-- Mirrored from preview.colorlib.com/theme/gricklo/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Oct 2021 21:39:19 GMT -->
+
+</html>
